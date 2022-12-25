@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="weatherData"
+            type="com.example.currentweatherdatabinding.dataclasses.WeatherData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="56sp"
+                android:textColor="@{weatherData.main.temp > 0 ? @color/above_zero : @color/below_zero}"
+                android:text="@{String.valueOf(Math.round(weatherData.main.temp)) + ` ℃`}"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(weatherData.description)}"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                >
+
+                <ImageView
+                    android:src="@drawable/ic_steam_air"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@{String.valueOf(Math.round(weatherData.main.pressure / 1.33))}"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="6"
+                >
+
+                <ImageView
+                    android:id="@+id/simple_wind_dir"
+                    android:layout_gravity="bottom"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(weatherData.wind.speed) + ' ' + @string/wind_speed}"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:src="@drawable/ic_humidity"
+                    android:id="@+id/simple_humidity"
+                    android:layout_gravity="bottom"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(Math.round(weatherData.main.humidity)) + `%`}"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

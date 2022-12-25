@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Forecaster</string>
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>Saint Petersburg</item>
+        <item>Novosibirsk</item>
+        <item>Yekaterinburg</item>
+        <item>Kazan</item>
+        <item>Nizhny Novgorod</item>
+        <item>Chelyabinsk</item>
+        <item>Samara</item>
+        <item>Omsk</item>
+        <item>Rostov-on-Don</item>
+        <item>Ufa</item>
+        <item>Krasnoyarsk</item>
+        <item>Voronezh</item>
+        <item>Perm</item>
+        <item>Volgograd</item>
+        <item>Krasnodar</item>
+        <item>Saratov</item>
+        <item>Tyumen</item>
+        <item>Tolyatti</item>
+        <item>Izhevsk</item>
+        <item>Barnaul</item>
+        <item>Ulyanovsk</item>
+        <item>Irkutsk</item>
+        <item>Khabarovsk</item>
+        <item>Makhachkala</item>
+        <item>Yaroslavl</item>
+        <item>Vladivostok</item>
+        <item>Orenburg</item>
+        <item>Tomsk</item>
+        <item>Kemerovo</item>
+        <item>Novokuznetsk</item>
+        <item>Ryazan</item>
+        <item>Naberezhnye Chelny</item>
+        <item>Astrakhan</item>
+        <item>Kirov</item>
+        <item>Penza</item>
+        <item>Sevastopol</item>
+        <item>Lipetsk</item>
+    </string-array>
+
+    <string name="API_KEY">d6843ab8ee963f5d372296dfff62aed7</string>
+    <string name="BUNDLE_NAME">weatherData</string>
+
+    <string name="ru">Русский</string>
+    <string name="en">English</string>
+    <string name="it">Italiano</string>
+
+    <string name="updated">Updated:</string>
+    <string name="feels_like">Feels like:</string>
+    <string name="day_max">Max per day:</string>
+    <string name="day_min">Min per day:</string>
+    <string name="atmo_pressure">Pressure:</string>
+    <string name="atmo_pressure_units">mm Hg</string>
+    <string name="wind">Wind:</string>
+    <string name="wind_speed">meters per sec</string>
+    <string name="humidity">Humidity:</string>
+</resources>

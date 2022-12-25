@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Синоптик</string>
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Новосибирск</item>
+        <item>Екатеринбург</item>
+        <item>Казань</item>
+        <item>Нижний Новгород</item>
+        <item>Челябинск</item>
+        <item>Самара</item>
+        <item>Омск</item>
+        <item>Ростов на Дону</item>
+        <item>Уфа</item>
+        <item>Красноярск</item>
+        <item>Воронеж</item>
+        <item>Пермь</item>
+        <item>Волгоград</item>
+        <item>Краснодар</item>
+        <item>Саратов</item>
+        <item>Тюмень</item>
+        <item>Тольятти</item>
+        <item>Ижевск</item>
+        <item>Барнаул</item>
+        <item>Ульяновск</item>
+        <item>Иркутск</item>
+        <item>Хабаровсе</item>
+        <item>Махачкала</item>
+        <item>Ярославль</item>
+        <item>Владивосток</item>
+        <item>Оренбург</item>
+        <item>Томск</item>
+        <item>Кемерово</item>
+        <item>Новокузнецк</item>
+        <item>Рязань</item>
+        <item>Набережные Челны</item>
+        <item>Астрахань</item>
+        <item>Киров</item>
+        <item>Пенза</item>
+        <item>Севастополь</item>
+        <item>Липецк</item>
+    </string-array>
+
+    <string name="API_KEY">d6843ab8ee963f5d372296dfff62aed7</string>
+    <string name="BUNDLE_NAME">weatherData</string>
+
+    <string name="ru">Русский</string>
+    <string name="en">English</string>
+    <string name="it">Italiano</string>
+
+    <string name="updated">Обновлено:</string>
+    <string name="feels_like">Чувствуется как:</string>
+    <string name="day_max">Макс. за день:</string>
+    <string name="day_min">Мин. за день:</string>
+    <string name="atmo_pressure">Давление:</string>
+    <string name="atmo_pressure_units">мм. рт. ст.</string>
+    <string name="wind">Ветер:</string>
+    <string name="wind_speed">м/с</string>
+    <string name="humidity">Влажность:</string>
+</resources>
